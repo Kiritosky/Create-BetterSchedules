@@ -192,7 +192,3 @@ Needs JDK 21. Dependency versions live in `gradle.properties` and follow the
 [Create wiki's add-on guide](https://wiki.createmod.net/developers/depend-on-create/neoforge-1.21.1).
 
 ---
-
-## License
-
-MIT.
