@@ -1,0 +1,63 @@
+{
+  "betterschedules.schedule.instruction.destination_if_carrying": "Destination if carrying",
+  "betterschedules.schedule.instruction.destination_if_carrying.summary": "Travel to station, only if",
+  "betterschedules.schedule.instruction.destination_if_carrying.detail": "%1$s -> \"%2$s\"",
+  "betterschedules.schedule.instruction.destination_if_carrying.mode": "Take this route when the train is",
+  "betterschedules.schedule.instruction.destination_if_carrying.slot": "Cargo to look for",
+  "betterschedules.schedule.instruction.destination_if_carrying.slot_1": "Leave empty to mean any cargo at all",
+
+  "betterschedules.schedule.instruction.jump": "Jump to entry",
+  "betterschedules.schedule.instruction.jump.summary": "Continue from another entry",
+  "betterschedules.schedule.instruction.jump.always": "Always jump to entry %1$s",
+  "betterschedules.schedule.instruction.jump.limited": "Jump to entry %1$s, up to %2$s times",
+  "betterschedules.schedule.instruction.jump.target": "Entry to continue from",
+  "betterschedules.schedule.instruction.jump.repeats": "Max jumps (0 = always)",
+
+  "betterschedules.schedule.condition.next_platform_free": "Next platform is free",
+  "betterschedules.schedule.condition.next_platform_free.short": "Platform free",
+  "betterschedules.schedule.condition.next_platform_free.occupancy": "Count a platform as busy when a train is",
+  "betterschedules.schedule.condition.next_platform_free.status": "Waiting for \"%1$s\" to clear",
+
+  "betterschedules.occupancy.docked_or_inbound": "docked or on approach",
+  "betterschedules.occupancy.docked": "docked",
+
+  "betterschedules.mode.carrying": "carrying",
+  "betterschedules.mode.not_carrying": "not carrying",
+
+  "betterschedules.schedule.condition.carriage_fluid_percent": "Wagon fill level (fluid)",
+  "betterschedules.schedule.condition.carriage_item_percent": "Wagon fill level (items)",
+  "betterschedules.schedule.condition.carriage_percent.status": "%1$s is %2$s%% full",
+
+  "betterschedules.schedule.condition.serve_all_carriages": "Serve every wagon",
+  "betterschedules.schedule.condition.serve_all_carriages.summary": "All wagons (%1$ss)",
+  "betterschedules.schedule.condition.serve_all_carriages.detail": "Advance after %1$ss idle, then %2$s",
+  "betterschedules.schedule.condition.serve_all_carriages.idle_time": "Idle time before advancing",
+  "betterschedules.schedule.condition.serve_all_carriages.finish": "When every wagon is done",
+  "betterschedules.schedule.condition.serve_all_carriages.status": "Serving wagon %1$s of %2$s",
+  "betterschedules.schedule.condition.serve_all_carriages.shunting": "Shunting to wagon %1$s of %2$s",
+  "betterschedules.schedule.condition.serve_all_carriages.returning": "Returning to the platform",
+
+  "betterschedules.schedule.condition.shunt": "Shunt the train",
+  "betterschedules.schedule.condition.shunt.forward": "%1$s %2$s forward",
+  "betterschedules.schedule.condition.shunt.backward": "%1$s %2$s backward",
+  "betterschedules.schedule.condition.shunt.distance": "Distance (negative reverses)",
+  "betterschedules.schedule.condition.shunt.unit": "Measured in",
+  "betterschedules.schedule.condition.shunt.status": "Shunting, %1$sm to go",
+
+  "betterschedules.schedule.condition.carriage_fluid_threshold": "Wagon holds fluid",
+  "betterschedules.schedule.condition.carriage_item_threshold": "Wagon holds items",
+  "betterschedules.schedule.condition.carriage_threshold.detail": "%1$s: %2$s",
+  "betterschedules.schedule.condition.carriage_threshold.carriage": "Which wagon to measure",
+  "betterschedules.schedule.condition.carriage_threshold.status": "%1$s holds %2$s %3$s",
+
+  "betterschedules.carriage.any": "Any wagon",
+  "betterschedules.carriage.numbered": "Wagon %1$s",
+
+  "betterschedules.finish.return": "roll back to the start",
+  "betterschedules.finish.stay": "stay where it is",
+
+  "betterschedules.unit.meters": "Meters",
+  "betterschedules.unit.carriages": "Wagon lengths",
+  "betterschedules.unit.buckets_short": "b",
+  "betterschedules.unit.items": "items"
+}

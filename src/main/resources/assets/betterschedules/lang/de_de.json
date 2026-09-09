@@ -1,0 +1,63 @@
+{
+  "betterschedules.schedule.instruction.destination_if_carrying": "Ziel, wenn beladen mit",
+  "betterschedules.schedule.instruction.destination_if_carrying.summary": "Zum Bahnhof fahren, aber nur wenn",
+  "betterschedules.schedule.instruction.destination_if_carrying.detail": "%1$s -> \"%2$s\"",
+  "betterschedules.schedule.instruction.destination_if_carrying.mode": "Diese Route nehmen, wenn der Zug",
+  "betterschedules.schedule.instruction.destination_if_carrying.slot": "Wonach gesucht wird",
+  "betterschedules.schedule.instruction.destination_if_carrying.slot_1": "Leer lassen für beliebige Fracht",
+
+  "betterschedules.schedule.instruction.jump": "Zu Eintrag springen",
+  "betterschedules.schedule.instruction.jump.summary": "Bei einem anderen Eintrag weitermachen",
+  "betterschedules.schedule.instruction.jump.always": "Immer zu Eintrag %1$s springen",
+  "betterschedules.schedule.instruction.jump.limited": "Zu Eintrag %1$s springen, höchstens %2$s mal",
+  "betterschedules.schedule.instruction.jump.target": "Eintrag, bei dem es weitergeht",
+  "betterschedules.schedule.instruction.jump.repeats": "Max. Sprünge (0 = immer)",
+
+  "betterschedules.schedule.condition.next_platform_free": "Nächster Bahnsteig ist frei",
+  "betterschedules.schedule.condition.next_platform_free.short": "Bahnsteig frei",
+  "betterschedules.schedule.condition.next_platform_free.occupancy": "Bahnsteig gilt als belegt, wenn ein Zug",
+  "betterschedules.schedule.condition.next_platform_free.status": "Wartet, bis \"%1$s\" frei wird",
+
+  "betterschedules.occupancy.docked_or_inbound": "hält oder im Anflug ist",
+  "betterschedules.occupancy.docked": "dort hält",
+
+  "betterschedules.mode.carrying": "beladen ist mit",
+  "betterschedules.mode.not_carrying": "nicht beladen ist mit",
+
+  "betterschedules.schedule.condition.carriage_fluid_percent": "Füllstand Waggon (Flüssigkeit)",
+  "betterschedules.schedule.condition.carriage_item_percent": "Füllstand Waggon (Items)",
+  "betterschedules.schedule.condition.carriage_percent.status": "%1$s ist zu %2$s%% gefüllt",
+
+  "betterschedules.schedule.condition.serve_all_carriages": "Alle Waggons bedienen",
+  "betterschedules.schedule.condition.serve_all_carriages.summary": "Alle Waggons (%1$ss)",
+  "betterschedules.schedule.condition.serve_all_carriages.detail": "Weiterfahren nach %1$ss Stillstand, danach %2$s",
+  "betterschedules.schedule.condition.serve_all_carriages.idle_time": "Wartezeit vor dem Weiterfahren",
+  "betterschedules.schedule.condition.serve_all_carriages.finish": "Wenn alle Waggons fertig sind",
+  "betterschedules.schedule.condition.serve_all_carriages.status": "Waggon %1$s von %2$s wird bedient",
+  "betterschedules.schedule.condition.serve_all_carriages.shunting": "Rangiert zu Waggon %1$s von %2$s",
+  "betterschedules.schedule.condition.serve_all_carriages.returning": "Fährt zurück zum Bahnsteig",
+
+  "betterschedules.schedule.condition.shunt": "Zug rangieren",
+  "betterschedules.schedule.condition.shunt.forward": "%1$s %2$s vorwärts",
+  "betterschedules.schedule.condition.shunt.backward": "%1$s %2$s rückwärts",
+  "betterschedules.schedule.condition.shunt.distance": "Strecke (negativ = rückwärts)",
+  "betterschedules.schedule.condition.shunt.unit": "Einheit",
+  "betterschedules.schedule.condition.shunt.status": "Rangiert, noch %1$sm",
+
+  "betterschedules.schedule.condition.carriage_fluid_threshold": "Waggon enthält Flüssigkeit",
+  "betterschedules.schedule.condition.carriage_item_threshold": "Waggon enthält Items",
+  "betterschedules.schedule.condition.carriage_threshold.detail": "%1$s: %2$s",
+  "betterschedules.schedule.condition.carriage_threshold.carriage": "Welcher Waggon gemessen wird",
+  "betterschedules.schedule.condition.carriage_threshold.status": "%1$s enthält %2$s %3$s",
+
+  "betterschedules.carriage.any": "Beliebiger Waggon",
+  "betterschedules.carriage.numbered": "Waggon %1$s",
+
+  "betterschedules.finish.return": "zurück zum Start rollen",
+  "betterschedules.finish.stay": "stehen bleiben",
+
+  "betterschedules.unit.meters": "Meter",
+  "betterschedules.unit.carriages": "Waggonlängen",
+  "betterschedules.unit.buckets_short": "b",
+  "betterschedules.unit.items": "Items"
+}
