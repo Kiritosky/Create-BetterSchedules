@@ -39,6 +39,13 @@ neoForge {
         }
     }
 
+    // Boots FML for the test JVM. Create's train classes reach the vanilla registries during class
+    // initialisation, so they cannot be loaded by a plain JUnit run.
+    unitTest {
+        enable()
+        testedMod = mods."${mod_id}"
+    }
+
     runs {
         configureEach {
             systemProperty "forge.logging.markers", "REGISTRIES"
@@ -54,12 +61,26 @@ neoForge {
     }
 }
 
+tasks.named("test", Test).configure {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "failed", "skipped"
+        exceptionFormat = "full"
+    }
+}
+
 dependencies {
     implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
     implementation "net.createmod.ponder:ponder-neoforge:${ponder_version}+mc${minecraft_version}"
     compileOnly "dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}"
     runtimeOnly "dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}"
     implementation "com.tterrag.registrate:Registrate:${registrate_version}"
+
+    testImplementation "org.junit.jupiter:junit-jupiter:5.10.2"
+    testImplementation "org.mockito:mockito-core:5.11.0"
+    testRuntimeOnly "org.junit.platform:junit-platform-launcher"
+    testImplementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
+    testImplementation "net.createmod.ponder:ponder-neoforge:${ponder_version}+mc${minecraft_version}"
 }
 
 // Expand mod metadata placeholders in neoforge.mods.toml
