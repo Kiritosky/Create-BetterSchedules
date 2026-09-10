@@ -184,9 +184,13 @@ condition on a stop with a plain destination after it.
 ## Building from source
 
 ```
-./gradlew build        # jar lands in build/libs/
+./gradlew build        # jar lands in build/libs/, runs the tests first
+./gradlew test         # just the tests, no game needed
 ./gradlew runClient    # dev client with Create already installed
 ```
+
+The tests drive every schedule entry against mocked trains, so shunting, routing, jumps and the
+platform check can all be verified without building a railway.
 
 Needs JDK 21. Dependency versions live in `gradle.properties` and follow the
 [Create wiki's add-on guide](https://wiki.createmod.net/developers/depend-on-create/neoforge-1.21.1).
